@@ -18,8 +18,10 @@ var reset = function() {
 
 
 	computerGuess = options[Math.floor(Math.random() * options.length)];
+	console.log(computerGuess);
 	document.querySelector("#guessesLeft").innerHTML = "Guesses Left: " + 9;
 	document.querySelector("#guessesSoFar").innerHTML = "Your Guesses So Far: " + [];
+
 	
 }
 	
