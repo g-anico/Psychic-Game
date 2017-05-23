@@ -45,13 +45,9 @@ document.onkeyup = function() {
 		losses++;
 		document.querySelector("#losses").innerHTML = "Losses: " + losses;
 		console.log("You might not be psychic");
-		alert("You might not be psychic...")
+		alert("You might not be psychic...");
 		reset ();
-	}
-
-		else if (guessesLeft > 0) {
-
-			if (userGuess == computerGuess){
+	} else if(guessesLeft > 0 && userGuess == computerGuess){
 				wins++;
 				document.querySelector("#wins").innerHTML = "Wins: " + wins;
 				console.log("You must be psychic");
@@ -59,7 +55,5 @@ document.onkeyup = function() {
 				reset ();
 			}
 
-			
-		}
 }				
 	
